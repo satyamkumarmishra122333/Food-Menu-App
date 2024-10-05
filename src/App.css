@@ -1,0 +1,149 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  padding: 20px;
+  background:url('https://img.freepik.com/free-photo/top-view-delicious-meat-soup-with-greens-potatoes-dark-desk_140725-76538.jpg?t=st=1728113549~exp=1728117149~hmac=8aa8dbefe690ba309e6130dc7aed6779c4aa814a1a355742938de22e8246f4dd&w=996');
+  
+}
+.App h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: transparent;
+  background: url(https://img.freepik.com/free-photo/assorted-mixed-fruits_74190-6961.jpg?t=st=1728116244~exp=1728119844~hmac=fe97176…&w=996);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  margin-top: 50px;
+  box-shadow: 0 0 0 1px greenyellow;
+  width: max-content;
+  margin: auto;
+  box-shadow: 0 0 20px 5px black;
+  backdrop-filter: blur(4px);
+  border-radius: 13px;
+}
+
+
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  
+}
+/* Custom Scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #28a745; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: white; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Optional: Change thumb color on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa; /* Change color on hover */
+}
+
+/* Custom Scrollbar for Firefox */
+* {
+  scrollbar-width: thin; /* Options: auto, thin, or none */
+  scrollbar-color: white #28a745; /* thumb color and track color */
+}
+
+.recipe-card p{
+  height: 30vh;
+  overflow-y: scroll;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  width: 25vw;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1.1);
+  color: white;
+  backdrop-filter: blur(8px);
+  background-color: #00000061;
+  transition: all 0.3s ease-in-out;
+}
+
+.recipe-card:hover{
+  box-shadow: 0 0 5px 3px #28a745;
+}
+.recipe-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* src/App.css */
+
+.search-input {
+  width: 60%; /* Set width of the input */
+  padding: 10px; /* Add some padding */
+  margin: 20px auto; /* Center the input */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+@media screen and (max-width:540px) {
+  .recipe-container{
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 90vw;
+  }
+  .recipe-card{
+    margin: auto;
+    width: 80vw;
+  }
+  .App h1{
+    width: 60vw;
+    font-size: x-large;
+    padding: 0 15px;
+  }
+  ::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #28a745; /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: white; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Optional: Change thumb color on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #aaa; /* Change color on hover */
+  }
+  
+  /* Custom Scrollbar for Firefox */
+  * {
+    scrollbar-width: thin; /* Options: auto, thin, or none */
+    scrollbar-color: white #28a745; /* thumb color and track color */
+  }
+}
